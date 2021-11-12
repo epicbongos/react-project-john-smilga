@@ -15,12 +15,14 @@ const Review = () => {
     }
     return number
   }
+
   const nextPerson = () => {
     setIndex((index) => {
       let newIndex = index + 1
       return checkNumber(newIndex)
     })
   }
+
   const prevPerson = () => {
     setIndex((index) => {
       let newIndex = index - 1
@@ -33,6 +35,7 @@ const Review = () => {
       randomNumber = index + 1
     }
     setIndex(checkNumber(randomNumber))
+    console.log(randomNumber)
   }
 
   return (
@@ -43,6 +46,7 @@ const Review = () => {
           <FaQuoteRight />
         </span>
       </div>
+
       <h4 className='author'>{name}</h4>
       <p className='job'>{job}</p>
       <p className='info'>{text}</p>
@@ -53,10 +57,10 @@ const Review = () => {
         <button className='next-btn' onClick={nextPerson}>
           <FaChevronRight />
         </button>
+        <button className='random-btn' onClick={randomPerson}>
+          suprise me
+        </button>
       </div>
-      <button className='random-btn' onClick={randomPerson}>
-        surprise me
-      </button>
     </article>
   )
 }
