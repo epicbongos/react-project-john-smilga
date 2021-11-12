@@ -14,12 +14,12 @@
 
 #### useEffect and Conditional Rendering
 
-b jb bl;j
-b jb bl;j
-b jb bl;j
-b jb bl;j
-b jb bl;j
-b jb bl;j
+Tours
+Reviews
+Questions
+Menu
+Tabs
+Slider
 
 #### Forms
 
